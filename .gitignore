@@ -1,7 +1,7 @@
 anzu/cmake-build-*/**
 anzu/build*/**
-.idea/**
-.vscode/**
+anzu/.idea/**
+anzu/.vscode/**
 
 # Prerequisites
 *.d
