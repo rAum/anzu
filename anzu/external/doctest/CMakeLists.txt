@@ -1,0 +1,5 @@
+if(NOT TARGET doctest)
+  message(STATUS "No target doctest, adding it from sources")
+  add_library(doctest INTERFACE)
+  target_include_directories(doctest SYSTEM INTERFACE include/)
+endif()

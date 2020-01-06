@@ -6,6 +6,7 @@ project(anzu
         HOMEPAGE_URL ${project_homepage}
         LANGUAGES CXX) #CUDA
 
+add_subdirectory(external)
 add_subdirectory(libanzu)
 
 add_executable(anzu-main main.cpp)
