@@ -12,12 +12,13 @@ include(ccache)
 
 add_subdirectory(external)
 include(testing)
+include(anzu_build)
 
 ##########################
 
 add_subdirectory(libanzu)
 
 add_executable(anzu-main main.cpp)
-target_link_libraries(anzu-main PRIVATE libanzu)
+target_link_libraries(anzu-main PRIVATE libanzu anzu_build_flags)
 
 #########################
