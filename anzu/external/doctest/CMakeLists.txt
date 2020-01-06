@@ -1,8 +1,8 @@
 # This file allows to use find_package returned doctest or the one shipped.
 
-option(ANZU_EXT_DOCTEST "Turns on/off if system installed doctest should be used instead of shipped one" OFF)
+option(ANZU_SYSTEM_DOCTEST "Turns on/off if system installed doctest should be used instead of shipped one" OFF)
 
-if (NOT ANZU_SYSTEM_DOCTEST)
+if (ANZU_SYSTEM_DOCTEST)
   find_package(doctest QUIET)
 endif()
 
