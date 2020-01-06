@@ -6,9 +6,14 @@ project(anzu
         HOMEPAGE_URL ${project_homepage}
         LANGUAGES CXX) #CUDA
 
+########################
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/)
+include(ccache)
+
 add_subdirectory(external)
 add_subdirectory(libanzu)
 
 add_executable(anzu-main main.cpp)
 target_link_libraries(anzu-main PRIVATE libanzu)
 
+#########################
