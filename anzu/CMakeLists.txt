@@ -11,6 +11,10 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/)
 include(ccache)
 
 add_subdirectory(external)
+include(testing)
+
+##########################
+
 add_subdirectory(libanzu)
 
 add_executable(anzu-main main.cpp)
