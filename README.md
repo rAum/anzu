@@ -21,3 +21,6 @@ It would be also nice to have really good documentation and tutorials.
 Aside of being a playground, as byproduct of testing I plan to implement some apps to test in the wild.
 
 In the end, all of this is just initial thoughts I have.
+
+## Other notes
+Currently I switched to focus mostly on [vilga](https://github.com/rAum/vilga) development as I think I need to boostrap some handy viz tool and it could be more useful for my other projects.
